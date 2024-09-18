@@ -37,7 +37,6 @@ func main() {
 		Addr:         ":443",
 		Handler:      mux,
 		TLSConfig:    cfg,
-		TLSNextProto: make(map[string]func(*http.Server, *tls.Conn, http.Handler), 0),
 	}
 
 	// Start the server
